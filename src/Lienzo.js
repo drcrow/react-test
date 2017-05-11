@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Platillos from './Platillos';
+import Pedidos from './Pedidos';
 
 class Lienzo extends Component{
 	render(){
@@ -7,7 +8,7 @@ class Lienzo extends Component{
 			<div className="container">
 				<div className="jumbotron"><h2>React App</h2></div>
 				<Platillos/>
-				<h4>Pedidos</h4>
+				<Pedidos/>
 			</div>);
 	}
 }
