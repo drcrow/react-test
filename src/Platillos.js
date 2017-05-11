@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Platillos.css';
 import logo from './logo.svg';
 import VarTiendaController from './tiendaController';
+import Ordenar from './Ordenar';
 
 class Platillos extends Component{
 
@@ -16,6 +17,7 @@ class Platillos extends Component{
 									<img role="presentation" src={logo} className="ImagenPlatillo"/>
 									<h2 className="TitlePlatillo">{value.nombre}</h2>
 									<div className="DescripcionPlatillo">{value.descripcion}</div>
+									<Ordenar precio={value.precio} />
 								</div>
 							</div>
 						)
