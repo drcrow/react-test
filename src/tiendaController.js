@@ -30,6 +30,17 @@ class TiendaController{
 			}
 		);
 	}
+
+	bebidasEnLaOrden(indicePlatillo, cantidadPlatillo){
+		this.bebidas.forEach((value, index)=>{
+
+				if(indicePlatillo===index){
+					this.bebidas[index].cantidad = cantidadPlatillo;
+				}
+
+			}
+		);
+	}
 }
 
 var VarTiendaController = new TiendaController;
