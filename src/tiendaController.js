@@ -14,6 +14,16 @@ class TiendaController{
 		);
 	}
 
+	ponerEnLaOrden(indicePlatillo, cantidadPlatillo){
+		this.platillos.forEach((value, index)=>{
+
+				if(indicePlatillo===index){
+					this.platillos[index].cantidad = cantidadPlatillo;
+				}
+
+			}
+		);
+	}
 }
 
 var VarTiendaController = new TiendaController;
