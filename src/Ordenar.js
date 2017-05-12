@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Ordenar extends Component{
 
 	actualizarCantidad(evento){
-		console.log(evento);
+		this.props.hacerPedido(this.props.indice, evento.target.value);
 	}
 
 	render(){
